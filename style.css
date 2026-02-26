@@ -22,7 +22,7 @@ a {color: gray;
 text-decoration: none;}
 
 p { font-size: 40; color: black;
-    font-family:"CabinetGrotesk"; 
+    /* font-family:"CabinetGrotesk";  */
     margin: 0;
 }
 .grid-container {
