@@ -5,7 +5,8 @@
 }
 body
 {background-color: white;
-font-family: "CabinetGrotesk"; }
+/* font-family: "CabinetGrotesk";  */
+font-family: 'Cabinet Grotesk', sans-serif;}
 
 img{
     max-width: 100%;
