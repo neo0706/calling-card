@@ -1,0 +1,148 @@
+/* HIER SCHREIBEN WIR CSS */
+@font-face {
+    font-family: "CabinetGrotesk";
+    src: url("Fonts/CabinetGrotesk-Extrabold.woff2") format("woff2");
+}
+body
+{background-color: white;
+font-family: "CabinetGrotesk"; }
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+font-size: 60px; 
+color:black;
+margin: 0;
+}
+a {color: gray; 
+text-decoration: none;}
+
+p { font-size: 40; color: black;
+    font-family:"CabinetGrotesk"; 
+    margin: 0;
+}
+.grid-container {
+  display: grid;
+  padding: 15px 15px 15px 15px;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-areas:
+    "header header header fachklasse mail telefon"
+    "bio bio . . . ."
+    "projekte . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    "p1-image p1-image p1-image p1-text  p1-text        ."
+    "p1-image p1-image p1-image p2-image p2-image p2-text"
+    ".        p3-image p3-image p3-image p3-text        ."
+    ". . . . . . "
+    "name2 . . . . ."
+    "strasse . . . . ."
+    "postleitzahl . . . . ."
+    "nummer . . . . copyright"
+}
+
+.header{
+    grid-area: header;
+}
+
+.fachklasse,
+.mail,
+.telefon {
+    margin-top: 12px;
+    margin-left: 53px
+}
+
+.bio {
+  grid-area: bio;
+  margin-top: 20px;
+  margin-bottom: 20px
+}
+
+.p1-image {
+  grid-area: p1-image;
+  margin-top: -30px;
+}
+
+.p1-text {
+  grid-area: p1-text;
+  margin-top: -33px;
+  height: 30px;
+}
+
+.p2-image {
+  grid-area: p2-image;
+  margin-top: 147px;
+  margin-left: 6px;
+}
+
+.p2-text {
+  grid-area: p2-text;
+  margin-right: 100px;
+  margin-top: 145px;
+}
+
+.p3-image {
+  grid-area: p3-image;
+  margin-top: 0px;
+  margin-bottom: -100px
+}
+
+.p3-text {
+  grid-area: p3-text;
+  margin-top: -3px;
+}
+
+
+.fachklasse {
+  grid-area: fachklasse;
+}
+
+.mail {
+  grid-area: mail;
+}
+
+.telefon {
+  grid-area: telefon;
+}
+
+.projekte {
+    grid-area: projekte;
+    margin-top: 10px;
+    margin-bottom: -8px;
+    font-size: 25px;
+}
+
+.name2{
+grid-area: name2;
+margin-top: 120px;
+margin-bottom: -136px;
+}
+
+.strasse{ 
+grid-area: strasse;
+margin-top: 120px;
+margin-bottom: -15px;
+}
+
+.nummer{
+grid-area: nummer;
+margin-top: -15px;
+margin-bottom: -15px;
+}
+
+.postleitzahl{
+grid-area: postleitzahl;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+
+.copyright{
+  grid-area: copyright;  
+  margin-top: -30px;
+margin-bottom: 1px;
+}
